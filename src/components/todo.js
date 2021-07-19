@@ -1,9 +1,9 @@
 import React from 'react'
 
-function todo() {
+function todo({text}) {
     return (
         <div className="todo">
-            <li className="todo-item">Heyyy</li>
+            <li className="todo-item">{text}</li>
 
             <button className="complete-btn">
                 <i className="fas fa-check"></i>

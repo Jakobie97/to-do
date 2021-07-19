@@ -6,15 +6,20 @@ import ToDoContainer from './components/toDoList'
 
 function App() {
   const [inputText, setInputText] = useState('')
-  const [toDos, setTodos] = useState([])
-//git commit :)
+  const [todos, setTodos] = useState([])
+  //git comment :)
   return (
     <div className="App">
         <header>
           <h2>Jacob's to-do list</h2>
         </header>
-        <Form inputText={inputText} toDos={toDos} setTodos={setTodos} setInputText={setInputText} />
-        <ToDoContainer />
+        <Form 
+          inputText={inputText} 
+          todos={todos} 
+          setTodos={setTodos} 
+          setInputText={setInputText} 
+        />
+        <ToDoContainer todos={todos} />
     </div>
   );
 }
