@@ -48,8 +48,8 @@ function App() {
       localStorage.setItem('todos', JSON.stringify([])); //checks if we have it 
     }
     else {
-      let todoLocal = JSON.parce(localStorage.getItem("todos"))
-      setTodos(todoLocal) //push it 
+      //let todoLocal = JSON.parce(localStorage.getItem("todos"))
+      //setTodos(todoLocal) //push it 
     }
   }
 
